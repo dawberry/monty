@@ -1,5 +1,5 @@
 #include "monty.h"
-stack_t *head = NULL;
+
 /**
  * main - Entry Point
  * @argc: Number of command line arguments.
@@ -8,6 +8,8 @@ stack_t *head = NULL;
  */
 int main(int argc, char **argv)
 {
+	stack_t *head = NULL;
+
 	if (argc < 2 || argc > 2)
 		err(1);
 	open_file(argv[1]);
@@ -20,6 +22,7 @@ int main(int argc, char **argv)
  */
 void free_nodes(void)
 {
+	stack_t *head = NULL;
 	stack_t *tmp;
 
 	if (head == NULL)
