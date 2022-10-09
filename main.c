@@ -1,5 +1,5 @@
 #include "monty.h"
-
+stack_t *head = NULL;
 /**
  * main - Entry Point
  * @argc: Number of command line arguments.
@@ -22,7 +22,6 @@ int main(int argc, char **argv)
  */
 void free_nodes(void)
 {
-	stack_t *head = NULL;
 	stack_t *tmp;
 
 	if (head == NULL)
@@ -44,7 +43,6 @@ void free_nodes(void)
 stack_t *create_node(int n)
 {
 	stack_t *node;
-	stack_t *head = NULL;
 
 	node = malloc(sizeof(stack_t));
 	if (node == NULL)
