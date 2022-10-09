@@ -8,8 +8,6 @@ stack_t *head = NULL;
  */
 int main(int argc, char **argv)
 {
-	stack_t *head = NULL;
-
 	if (argc < 2 || argc > 2)
 		err(1);
 	open_file(argv[1]);
