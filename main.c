@@ -44,6 +44,7 @@ void free_nodes(void)
 stack_t *create_node(int n)
 {
 	stack_t *node;
+	stack_t *head = NULL;
 
 	node = malloc(sizeof(stack_t));
 	if (node == NULL)
