@@ -41,6 +41,7 @@ typedef struct instruction_s
 } instruction_t;
 
 extern stack_t *head;
+stack_t *head = NULL;
 
 /*Type for opcode functions*/
 typedef void (*op_func)(stack_t **, unsigned int);
